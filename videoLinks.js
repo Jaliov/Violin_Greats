@@ -1,4 +1,4 @@
-import { stuff, violinist1, stuff3, buttonrow } from '/info.js';
+import { stuff, violinist1, stuff3, buttonrow } from 'info.js';
 console.log(stuff3);
 
 // document.querySelector("#clip1").src =
