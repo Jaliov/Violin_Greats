@@ -4,8 +4,8 @@ console.log(stuff3);
 // document.querySelector("#clip1").src =
 // "https://www.youtube.com/embed/hB5SSbn0xLo";
 
-  let row = document.querySelector("#dunce");
-  row.innerHTML  = buttonrow;
+  // let row = document.querySelector("#dunce");
+  // row.innerHTML  = buttonrow;
 
   // document.querySelector('.btntech').innerHTML = ` <p>
   // <button class="btn btn-dark" type="button" data-toggle="collapse"
@@ -23,6 +23,6 @@ console.log(stuff3);
  
  
 
-jQuery('button').click( function(e) {
-  jQuery('.collapse').collapse('hide');
-});
+// jQuery('button').click( function(e) {
+//   jQuery('.collapse').collapse('hide');
+// });

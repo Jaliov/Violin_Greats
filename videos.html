@@ -27,13 +27,15 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe></center>
                    
-                    <center><p>
+                    <div>
+                    <center>
                         <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Composer</button>
                         
                         <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Violinist</button>
                         
                         <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Composition</button>
-                      </p></center>
+                   </center>
+                </div>
                       <div class="row">
                        <div class="col">
                           <div class="collapse multi-collapse" id="multiCollapseExample1">
@@ -69,8 +71,10 @@
     <script type="module" src="info.js"></script>
  
     <script>
-        jQuery('button').click( function(e) {
-     jQuery('.collapse').collapse('hide');
+
+
+      jQuery('button').click( function(e) {
+     jQuery('.collapse').collapse('hide'), passive, true;
    });
    </script>
 
