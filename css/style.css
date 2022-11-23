@@ -23,8 +23,8 @@ body {
   background: transparent;
 }
 
-.card-body span {
-  background-color: rgba(46, 43, 43);
+.card-body, span {
+  background-color: transparent;
   padding: 1rem;
   box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6);
 }
@@ -144,5 +144,15 @@ LABEL {
 }
 
 button {
+  background-color: transparent;
+}
+.btn{
+  color: red; 
+  background: transparent;
+}
+iframe {
+  background-origin: transparent;
+}
+.card {
   background-color: transparent;
 }

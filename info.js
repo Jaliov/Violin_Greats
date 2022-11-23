@@ -4,11 +4,16 @@ const violinist1 = `<p>Henryk Szeryng (1918 - 1988) was a violinist and pedagogu
 
 const stuff3 = "<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>"
 
-let buttonrow = ` <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample1' data-target=stuff><div class='card card-body' > </div> </div> </div> 
-<div class='col'><div class='collapse multi-collapse' id='multiCollapseExample2'<div class='card card-body' ></div></div></div>
-<div class='col'><div class='collapse multi-collapse' id='multiCollapseExample3'><div class='card card-body' ></div></div></div>`
+// let buttonrow = ` <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample1' data-target=stuff><div class='card card-body' > </div> </div> </div> 
+// <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample2'<div class='card card-body' ></div></div></div>
+// <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample3'><div class='card card-body' ></div></div></div>`
+
+document.querySelector("#composer").innerHTML = stuff;
+document.querySelector("#violinist").innerHTML = violinist1;
+document.querySelector("#composition").innerHTML = stuff3;
+
 
 
 export {
-    stuff, violinist1, stuff3, buttonrow
+    stuff, violinist1, stuff3
 }
