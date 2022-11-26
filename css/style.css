@@ -8,8 +8,9 @@ body {
 }
 
 .collapse {
-  position: absolute;
-  z-index: 1;
+  /* position: relative;
+  z-index: 2; */
+  background-color: black;
 }
 #heifetz_link {
   margin-top: 0.5em;
@@ -26,7 +27,8 @@ body {
 .card-body, span {
   background-color: transparent;
   padding: 1rem;
-  box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6);
+  /* box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6); */
+  color: whitesmoke;
 }
 
 .item  {
@@ -80,13 +82,17 @@ iframe {
   padding-right: 0.2rem;
 }
 
-p,
+p {
+  color: red; 
+  font-size: 1.1em;
+}
+
 li {
   font-size: 1.2em;
   color: red;
   margin-left: 3%;
   margin-right: 3%;
-  background-color: rgb(39, 22, 22);
+  /* background-color: rgb(39, 22, 22); */
  }
 h2 {
   font-size: 2.5em;
@@ -113,17 +119,10 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-#player {
+/* #player {
   border: 5px dotted white;
-}
+} */
 
-.popover-body {
-  background-color: rgba(46, 43, 43) !important;
-  color: whitesmoke !important;
-  /* font-size: 16px !important; */
-  max-width: auto !important;
-  box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6);
-}
 .form-control {
   margin-bottom: 2em;
 }

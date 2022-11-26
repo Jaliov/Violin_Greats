@@ -1,8 +1,8 @@
-import { stuff, violinist1, stuff3, buttonrow } from 'info.js';
-console.log(stuff3);
+// import { stuff, violinist1, stuff3, buttonrow } from '/info.js';
+// console.log(stuff3);
 
 // document.querySelector("#clip1").src =
-// "https://www.youtube.com/embed/hB5SSbn0xLo";
+// const clip1 = "https://www.youtube.com/embed/hB5SSbn0xLo";
 
   // let row = document.querySelector("#dunce");
   // row.innerHTML  = buttonrow;

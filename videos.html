@@ -2,16 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href='css/style.css'>
+  <link rel="stylesheet" href='css/style.css'>
 
 
 </head>
@@ -19,63 +22,154 @@
 <body>
 
 
-    <div>
+  <div>
 
-        <div class="card mb-3">
-            <center><iframe width="75%" height="315px" title="YouTube video player"
-                    src="https://www.youtube.com/embed/hB5SSbn0xLo" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></center>
-                   
-                    <div>
-                    <center>
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Composer</button>
-                        
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Violinist</button>
-                        
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Composition</button>
-                   </center>
-                </div>
-                      <div class="row">
-                       <div class="col">
-                          <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <div class="card card-body" id = "composer">
-                        
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card card-body" id = "violinist">
-                         
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample3">
-                              <div class="card card-body" id = "composition">
-                           
-                              </div>
-                            </div>
-                          </div>
-                  
-                      </div>
-            </center>
+    <div class="card mb-3">
+      <center><iframe width="75%" height="315px" title="YouTube video player"
+          src="https://www.youtube.com/embed/hB5SSbn0xLo" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></center>
+
+      <div>
+        <center>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1"
+            aria-expanded="false" aria-controls="multiCollapseExample1">Composer</button>
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+            aria-expanded="false" aria-controls="multiCollapseExample2">Violinist</button>
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3"
+            aria-expanded="false" aria-controls="multiCollapseExample3">Composition</button>
+        </center>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body" id="composer">
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body" id="violinist">
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body" id="composition">
+
+            </div>
+          </div>
         </div>
 
-    </div>
-
-    </div>
-    </div>
-    <script type="module" src="videoLinks.js"></script>
-    <script type="module" src="info.js"></script>
- 
-    <script>
+      </div>
+      </center>
 
 
-      jQuery('button').click( function(e) {
-     jQuery('.collapse').collapse('hide'), passive, true;
-   });
-   </script>
+    </div>
+    <div class="card mb-3">
+      <center><iframe width="75%" height="315px" title="YouTube video player"
+          src="https://www.youtube.com/embed/NllhcuOmiwM" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></center>
+
+      <div>
+        <center>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4"
+            aria-expanded="false" aria-controls="multiCollapseExample4">Composer</button>
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5"
+            aria-expanded="false" aria-controls="multiCollapseExample5">Violinist</button>
+
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6"
+            aria-expanded="false" aria-controls="multiCollapseExample6">Composition</button>
+        </center>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample4">
+            <div class="card card-body" id="composer2">
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample5">
+            <div class="card card-body" id="violinist2">
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample6">
+            <div class="card card-body" id="composition2">
+            </div>
+          </div>
+        </div>
+
+      </div>
+          </center>
+
+        </div>
+    
+          <div class="card mb-3">
+            <center><iframe width="75%" height="315px" title="YouTube video player"
+                src="https://www.youtube.com/embed/CmmpjziKcFU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></center>
+
+            <div>
+              <center>
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample7"
+                  aria-expanded="false" aria-controls="multiCollapseExample7">Composer</button>
+
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample8"
+                  aria-expanded="false" aria-controls="multiCollapseExample8">Violinist</button>
+
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9"
+                  aria-expanded="false" aria-controls="multiCollapseExample9">Composition</button>
+              </center>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample7">
+                  <div class="card card-body" id="composer3">
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample8">
+                  <div class="card card-body" id="violinist3">
+
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample9">
+                  <div class="card card-body" id="composition3">
+
+                  </div>
+                </div>
+              </div>
+
+              </center>
+            </div>
+
+          </div>
+        </div>
+        <script type="module" src="videoLinks.js"></script>
+        <script type="module" src="info.js"></script>
+
+        <script>
+
+
+          jQuery('button').click(function (e) {
+            jQuery('.collapse').collapse('hide'), passive, true;
+          });
+        </script>
 
 </html>

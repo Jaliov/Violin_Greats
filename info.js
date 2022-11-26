@@ -4,15 +4,25 @@ const violinist1 = `<p>Henryk Szeryng (1918 - 1988) was a violinist and pedagogu
 
 const stuff3 = "<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>"
 
-// let buttonrow = ` <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample1' data-target=stuff><div class='card card-body' > </div> </div> </div> 
-// <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample2'<div class='card card-body' ></div></div></div>
-// <div class='col'><div class='collapse multi-collapse' id='multiCollapseExample3'><div class='card card-body' ></div></div></div>`
+const composer2 = `<p>lLorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat explicabo iure consectetur exercitationem atque aspernatur harum consequatur ex corporis et? </p>`
+
+const violinist2 = `<p>lores. Architecto facere neque incidunt placeat ea cupiditate expedita eveniet laudantium deleniti, vero ratione dolor. Corrupti, assumenda recusandae ipsum blanditiis voluptas voluptate?</p>`
+
+const stuff2 = `<p>Ut totam optio qui sunt itaque rem dolor aliquam qui aspernatur corrupti sed similique odit et earum quod est atque ullam! Hic dolores accusamus et debitis perferendis in harum voluptatem aut dolorem aliquam. Qui asperiores voluptatum eum fuga amet aut dignissimos enim sed aperiam voluptas.</p>`
+
+let slat  = "document.querySelector"
 
 document.querySelector("#composer").innerHTML = stuff;
 document.querySelector("#violinist").innerHTML = violinist1;
 document.querySelector("#composition").innerHTML = stuff3;
 
+document.querySelector("#composer2").innerHTML = composer2;
+document.querySelector("#violinist2").innerHTML = violinist2;
+document.querySelector("#composition2").innerHTML = stuff2;
 
+document.querySelector("#composer3").innerHTML = `<p>Well howdy you all.</p>`;
+document.querySelector("#violinist3").innerHTML = `<p>violinist2 is n ot the content here blubby</P>`;
+document.querySelector("#composition3").innerHTML = "<p>dummy text, dummy, OING SUPLOUDFDFDFDFDFDF</p>";
 
 export {
     stuff, violinist1, stuff3

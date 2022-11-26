@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href='css/style.css'>
+    
+    
+    </head>
+<body>
+ <div>
+<center>
+    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1" id = "btn1">Composer</button>
+    
+    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" id = "btn4">Violinist</button>
+    
+    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Composition</button>
+    </center>
+    </div> 
+    <!-- <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Composition</button> -->
+    <!-- </center>
+    </div> 
+     
+    <center>
+    
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body" id = "composer">
+    
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body" id = "violinist">
+     
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample3">
+          <div class="card card-body" id = "composition">
+       
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample4">
+          <div class="card card-body" id = "composer2">
+       
+          </div>
+        </div>
+      </div>  
+    </center>
+  
+    <!-- <script type="module" src="videoLinks.js"></script> -->
+
+    <p id = "demo"></p>
+    <p id = "demo3"></p>
+    <script type="javascript" src="info.js"></script>
+
+    <script>
+const element = document.getElementById("btn1");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = stuff;
+}
+
+const element3 = document.getElementById("btn4");
+ element3.addEventListener("click", myFunction3);
+ 
+ function myFunction3() {
+   document.getElementById("demo3").innerHTML = violinist1;
+ }
+const stuff = "<p>Wolfgang Amadeus Mozart[n 1] (27 January 1756 – 5 December 1791), baptised as Joannes Chrysostomus Wolfgangus Theophilus Mozart,[n 2] was a prolific and influential composer of the Classical period. Despite his short life, his rapid pace of composition resulted in more than 800</p>";
+
+const violinist1 = `<p><span>Henryk Szeryng</span>(1918 - 1988) was a violinist and pedagogue. As a young boy he was trained by his mother to play piano but later decided turned to the violin. Szeryng went to Berlin to study under famed pedagogue Karl Flesch. He made his debut in Warsaw when in 1933 he performed the violin concerto of Ludwig van Beethoven with the Warsaw Philharmonic Orchestra under the baton of Bruno Walter. In the same year he played in Bucharest, Vienna, and Paris, achieving acclaim both from the audience and the critics. He gave concerts for the Allied forces in army camps and field hospitals (more than 300) during World War 2.  He has performed with the most famous orchestras and conductors across Europe, the Americas, Africa, and Asia.</p>`
+
+const stuff3 = "<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>"
+
+const info2 = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`
+
+$("button").click(function() {
+  $("#demo").toggle();
+});
+$("button").click(function() {
+  $("#demo3").toggle();
+});
+jQuery('button').click( function(e) {
+    jQuery('.collapse').collapse('hide')
+  });
+
+
+      // document.querySelector("#composer").innerHTML =stuff;
+      // document.querySelector("#violinist").innerHTML = violinist1;
+      // document.querySelector("#composition").innerHTML = stuff3;
+      // document.querySelector("#composer2").innerHTML = "FUCK FUCK";
+      
+          </script>
+
+</body>
