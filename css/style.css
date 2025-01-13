@@ -1,13 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-image: url('../violin_subtract.png');
-
+  background-image: url("../violin_subtract.png");
+  animation: mymove 180s infinite;
 }
-.container {
+
+/*background image animation*/
+@keyframes mymove {
+  50% {
+    background-position: center;
+  }
+}
+
+.container,
+.container-fluid {
   background-color: rgb(66, 9, 7, 0.3);
   box-sizing: border-box;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .collapse {
@@ -17,9 +38,8 @@ body {
 }
 #heifetz_link {
   margin-top: 0.5em;
- margin-bottom: 20%;
+  margin-bottom: 20%;
 }
-
 
 #navbarNav {
   position: relative;
@@ -28,26 +48,54 @@ body {
   background: transparent;
 }
 
-.card-body, span {
+.card-body,
+.card {
   background-color: transparent;
-  padding: 1rem;
-  /* box-shadow: 5px 15px 5px rgb(217, 83, 79, 0.6); */
+  /* padding: 1rem; */
+
   color: whitesmoke;
   overflow: hidden;
   box-sizing: border-box;
 }
 
-.item  {
-  margin: auto;
-  width: 100%;
-  height: 500px;
-
-  
+.card-item,
+.card-image {
+  width: 45em;
+  height: 30em;
+  border-radius: 20px;
+  aspect-ratio: 16 / 9;
+  /* object-fit: cover; */
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  /* position: relative; */
+  overflow: hidden;
+  transition: transform 800ms;
+  border-style: solid;
+  border-color: #dddd;
+  /* z-index: 1; */
+  /* padding: 5px; */
 }
-iframe {    
+
+/* .card-item .card-image {
+  width: 50%;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+} */
+
+.text-center {
+  overflow: hidden;
+}
+
+.hidden:hover img {
+  transform: scale(1.2);
+
+  overflow: hidden;
+}
+
+iframe {
   border: 0;
   overflow: hidden;
- }
+}
 
 .navbar {
   background-color: rgb(217, 83, 79, 0.2);
@@ -59,13 +107,14 @@ iframe {
   }
 }
 #header {
-  /* margin-bottom: 30px; */
-  font-family: 'Marko One', serif;
+  padding-top: 2rem;
+  font-family: "Marko One", serif;
   margin-bottom: 20px;
+  margin-top: -20px;
 }
 
 .navbar-brand {
-  font-family: 'Marko One', serif;
+  font-family: "Marko One", serif;
   padding-bottom: -0.1rem;
 }
 /* .alert,.form-control, .card  {
@@ -90,7 +139,7 @@ iframe {
 }
 
 p {
-  color: red; 
+  color: red;
   font-size: 1.1em;
 }
 
@@ -100,31 +149,41 @@ li {
   margin-left: 3%;
   margin-right: 3%;
   /* background-color: rgb(39, 22, 22); */
- }
+}
 h2 {
   font-size: 2.5em;
 }
 
-.cardSpacing {
+/* .cardSpacing {
   box-shadow: 0px 0px;
-  padding-bottom: 1rem; 
- width: auto;
- height: auto; 
- margin-bottom: -50px;
-}
+  padding-bottom: 1rem;
+  width: auto;
+  height: auto;
+  margin-bottom: -50px;
+} */
 
-.btn-list {
-  margin-bottom: 3rem;
-}
+/* .card-item {
+  user-select: none;
+  /* width: 75%; */
+/* display: block; */
+/* background-image: url("violin_subtract.png"); */
+/* padding: 18px;
+  margin-top: 10px; */
+/* border-radius: 12px;
+  text-decoration: none; */
+/* border: 2px solid transparent; */
+/* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); */
+/* transition: 0.2s ease; */
+/* overflow: hidden; */
 
-.btn-list:hover,
-.btn-danger:hover {
-  transform: scale(0.97);
-}
-.btn-danger {
+/* .btn-danger {
   margin-top: -0.5rem;
   margin-bottom: 0.5rem;
-}
+} */
+
+/* .btn {
+  margin-top: -10px;
+} */
 
 /* #player {
   border: 5px dotted white;
@@ -142,23 +201,212 @@ LABEL {
 }
 
 #info1 {
- background-color:rgb(66, 9, 7, 0.3);
+  background-color: rgb(66, 9, 7, 0.3);
 }
 
 .dropdown-menu {
-  background-color:rgb(66, 9, 7, 0.3);
+  background-color: rgb(66, 9, 7, 0.3);
 }
 
-button {
+/* button {
   background-color: transparent;
-}
-.btn{
-  color: red; 
+} */
+
+.btnStyle {
+  color: #ff0000;
+  /* background: transparent; */
+  text-shadow: none;
   background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  /* border: 1px solid #ffffff80; */
+  transition: 0.5s ease;
+  user-select: none;
+  width: 10rem;
+  height: 3rem;
 }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btnStyle:hover,
+:focus {
+  color: #ffffff;
+  background: hsl(0, 100%, 50%, 25%);
+  /* border: 1px solid #ff0000; */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px #ff0000, 0 0 50px #ff0000,
+    0 0 100px #008cff;
+}
+.collapseBtnsStyling {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+  animation-range-start: cover;
+  animation-range-end: contain;
+}
+
+.collapseBtnsStyling.show {
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+
 iframe {
   background-origin: transparent;
 }
 .card {
   background-color: transparent;
+  overflow: hidden;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+
+img {
+  animation: fade-in horizontal;
+  animation-timeline: view(250px);
+  animation-range-start: cover;
+  animation-range-end: contain;
+  border-radius: 20px;
+}
+
+/*Scroll Effect */
+
+img > button {
+  animation: fade-in linear;
+  animation-timeline: view(250px);
+}
+
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes img {
+  to {
+    scale: 1 1;
+  }
+}
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  /* transform: translateY(-100%); */
+  transition: all 3s;
+  /* background-image: url("../violin_subtract.png"); */
+  transform: scale(0.75);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  /* transform: translateX(0); */
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.intro {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  text-decoration: none;
+  color: white;
+
+  /* padding-top: 100px; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 25%; */
+  /* aspect-ratio: 16 / 9; */
+  object-fit: cover;
+  /* border-radius: 10px; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro:hover {
+  cursor: pointer;
+  opacity: 1;
+  overflow: hidden;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(206, 23, 23);
+}
+.intro > h1 {
+  /* color: white; */
+  font-size: 2rem;
+  width: 50%;
+  margin: auto;
+  background: rgb(66, 9, 7, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+/*slider*/
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  opacity: 0.5;
+  /* backdrop-filter: sepia(90%); */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-block;
+
+  animation: 30s slide infinite linear;
+}
+.logos-slide img {
+  height: 8rem;
+  width: auto;
+  margin: 0 30px; /*40px on left and right of each image tag*/
+}
+
+#heifetz {
+  height: 9rem;
+  width: auto;
+  border-radius: 10px;
+}
+
+.logos img {
+  border-width: 0;
+  border-radius: 10px;
 }

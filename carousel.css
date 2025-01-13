@@ -1,0 +1,37 @@
+.carousel {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.carousel-inner > .carousel-item > img {
+  width: auto;
+  height: 15em;
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-inner > .carousel-item > img {
+    height: 8em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel {
+    margin-top: 0;
+  }
+}
+
+.carousel-item {
+  opacity: 0.2;
+  transition: opacity ease-out 1s;
+
+  /*opacity */
+}
+
+.carousel.carousel-fade .carousel-item.active {
+  /* margin-bottom: 50px; */
+  opacity: 1 !important;
+}
+
+.card-body {
+  height: 4em;
+}
