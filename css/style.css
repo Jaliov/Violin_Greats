@@ -17,6 +17,10 @@ body {
   animation: mymove 180s infinite;
 }
 
+span {
+  white-space: nowrap;
+}
+
 /*background image animation*/
 @keyframes mymove {
   50% {
@@ -48,22 +52,19 @@ body {
   background: transparent;
 }
 
-.card-body,
-.card {
-  background-color: transparent;
-  /* padding: 1rem; */
-
-  color: whitesmoke;
-  overflow: hidden;
-  box-sizing: border-box;
+/*  */
+.multi-collapse,
+.collapse,
+.show {
+  margin-bottom: 1rem;
 }
 
 .card-item,
 .card-image {
-  width: 45em;
-  height: 30em;
+  width: 40vw;
+  height: 50vh;
   border-radius: 20px;
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
   /* object-fit: cover; */
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
   /* position: relative; */
@@ -211,6 +212,9 @@ LABEL {
 /* button {
   background-color: transparent;
 } */
+.multi-collapse {
+  background-color: black;
+}
 
 .btnStyle {
   color: #ff0000;
@@ -357,6 +361,14 @@ img > button {
 a:link {
   text-decoration: none;
   color: rgb(206, 23, 23);
+}
+
+h6 {
+  font-size: 2rem;
+  width: 25%;
+  margin: auto;
+  background: rgb(66, 9, 7, 0.3);
+  padding-bottom: 0.5rem;
 }
 .intro > h1 {
   /* color: white; */
