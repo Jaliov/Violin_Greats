@@ -61,8 +61,8 @@ span {
 
 .card-item,
 .card-image {
-  width: 40vw;
-  height: 50vh;
+  width: 40rem;
+  height: 30rem;
   border-radius: 20px;
   /* aspect-ratio: 16 / 9; */
   /* object-fit: cover; */
@@ -74,6 +74,26 @@ span {
   border-color: #dddd;
   /* z-index: 1; */
   /* padding: 5px; */
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 570px) {
+  .card-item,
+  .card-image {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    max-width: 90vw;
+    max-height: 30vh;
+    aspect-ratio: 16 / 9;
+  }
+  p {
+    width: 80vw;
+  }
+  .btnStyle {
+    width: 5rem;
+  }
 }
 
 /* .card-item .card-image {
@@ -247,6 +267,7 @@ LABEL {
 }
 
 .btnStyle:hover,
+small:hover,
 :focus {
   color: #ffffff;
   background: hsl(0, 100%, 50%, 25%);
@@ -257,7 +278,6 @@ LABEL {
 }
 .collapseBtnsStyling {
   margin-bottom: 2rem;
-  margin-top: 1rem;
 
   animation-range-start: cover;
   animation-range-end: contain;

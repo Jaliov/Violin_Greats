@@ -34,9 +34,9 @@ document.getElementById(
   "composer2"
 ).innerHTML = `<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos</p>.`;
 
-document.getElementById(
-  "multiCollapseExample7"
-).innerHTML = `<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam  eos</p>.`;
+// document.getElementById(
+//   "multiCollapseExample7"
+// ).innerHTML = `<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam  eos</p>.`;
 
 // const scrollers = document.querySelector(".scroller");
 
@@ -86,3 +86,7 @@ document.getElementById(
 document.getElementById(
   "Composer1"
 ).innerHTML = `<p>Antonio Vivaldi (1678 - 1741) was one of the most productive composers of the Baroque era. His vast output included substantial quantities of chamber and vocal music, some 46 operas and a remarkable 500 concertos.</p>`;
+
+document.getElementById(
+  "Soloist2"
+).innerHTML = `Kyung Wha Chung, born in 1948, is a famous South Korean violinist. She began studying the violin at age 4 and became recognized as a child prodigy. At age 9 she made her debut with the Seoul Philharmonic Orchestra, playing the Mendelssohn Violin Concerto! `;
