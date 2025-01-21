@@ -18,13 +18,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 // document.addEventListener("mouseover", intro).style =
 //   "color:white;z-index:1000;";
 
-function showTitle() {
-  document.querySelectorAll(".card-image").innerHTML = "Test content";
-}
+// function showTitle() {
+//   document.querySelectorAll(".card-image").innerHTML = "Test content";
+// }
 
-function on() {
-  document.querySelector(".intro").style.display = "block";
-}
+// function on() {
+//   document.querySelector(".intro").style.display = "inline-block";
+// }
 
 function off() {
   document.querySelector(".intro").style.display = "none";
@@ -79,14 +79,14 @@ document.getElementById(
       </div>
     </nav>`;
 
-document.getElementById(
-  "Soloist1"
-).innerHTML = `<p>Henryk Szeryng (1918 - 1988) was a violinist and pedagogue. As a young boy he was trained by his mother to play piano but later decided turned to the violin. Szeryng went to Berlin to study under famed pedagogue Karl Flesch. He made his debut in Warsaw when in 1933 he performed the violin concerto of Ludwig van Beethoven with the Warsaw Philharmonic Orchestra under the baton of Bruno Walter. In the same year he played in Bucharest, Vienna, and Paris, achieving acclaim both from the audience and the critics.</p> `;
+// document.getElementById(
+//   "Soloist1"
+// ).innerHTML = `<p>Henryk Szeryng (1918 - 1988) was a violinist and pedagogue. As a young boy he was trained by his mother to play piano but later decided turned to the violin. Szeryng went to Berlin to study under famed pedagogue Karl Flesch. He made his debut in Warsaw when in 1933 he performed the violin concerto of Ludwig van Beethoven with the Warsaw Philharmonic Orchestra under the baton of Bruno Walter. In the same year he played in Bucharest, Vienna, and Paris, achieving acclaim both from the audience and the critics.</p> `;
 
-document.getElementById(
-  "Composer1"
-).innerHTML = `<p>Antonio Vivaldi (1678 - 1741) was one of the most productive composers of the Baroque era. His vast output included substantial quantities of chamber and vocal music, some 46 operas and a remarkable 500 concertos.</p>`;
+// document.getElementById(
+//   "Composer1"
+// ).innerHTML = `<p>Antonio Vivaldi (1678 - 1741) was one of the most productive composers of the Baroque era. His vast output included substantial quantities of chamber and vocal music, some 46 operas and a remarkable 500 concertos.</p>`;
 
-document.getElementById(
-  "Soloist2"
-).innerHTML = `Kyung Wha Chung, born in 1948, is a famous South Korean violinist. She began studying the violin at age 4 and became recognized as a child prodigy. At age 9 she made her debut with the Seoul Philharmonic Orchestra, playing the Mendelssohn Violin Concerto! `;
+// document.getElementById(
+//   "Soloist2"
+// ).innerHTML = `Kyung Wha Chung, born in 1948, is a famous South Korean violinist. She began studying the violin at age 4 and became recognized as a child prodigy. At age 9 she made her debut with the Seoul Philharmonic Orchestra, playing the Mendelssohn Violin Concerto! `;
