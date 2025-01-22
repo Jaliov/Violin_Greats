@@ -6,7 +6,6 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
   padding: 10px;
-}
   
 #container > div {
   aspect-ratio: 3 / 2;
