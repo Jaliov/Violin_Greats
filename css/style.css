@@ -10,11 +10,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
   background-image: url("../violin_subtract.png");
   animation: mymove 180s infinite;
+  padding-bottom: 25vh;
 }
 
 span {
@@ -391,6 +389,16 @@ h6 {
   margin: auto;
   background: rgb(66, 9, 7, 0.3);
   padding-bottom: 0.5rem;
+}
+
+#JHLink {
+  color: #ffffff;
+}
+
+#JHLink:hover {
+  transform: scale(1.2);
+  color: orange;
+  background-color: transparent;
 }
 
 /*slider*/
