@@ -136,7 +136,7 @@ iframe {
 #header {
   padding-top: 2rem;
   font-family: "Marko One", serif;
-  margin-bottom: 2rem;
+
   margin-top: -20px;
 }
 
@@ -443,4 +443,13 @@ h6 {
 .logos img {
   border-width: 0;
   border-radius: 10px;
+}
+.dropdown-menu {
+  background: hsl(0, 100%, 50%, 25%);
+  font-family: "Marko One", serif;
+  width: 50%;
+}
+
+#description {
+  outline-color: none;
 }
