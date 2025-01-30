@@ -12,3 +12,6 @@ document.getElementById(
                             violinist. The music of Mozart embraces opera, symphony, concerto, chamber, choral,
                             instrumental and vocal music, revealing an astonishing number of imperishable
                             masterpieces.</p>`;
+$(function () {
+  $(".html-tooltip").tooltip();
+});
