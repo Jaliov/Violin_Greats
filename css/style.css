@@ -244,6 +244,7 @@ LABEL {
   user-select: none;
   width: 10rem;
   height: 3rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes moveInLeft {
@@ -274,7 +275,6 @@ small:hover,
 }
 .collapseBtnsStyling {
   margin-bottom: 2rem;
-
   animation-range-start: cover;
   animation-range-end: contain;
 }
@@ -293,9 +293,6 @@ iframe {
 .card {
   background-color: transparent;
   overflow: hidden;
-
-  /* display: flex;
-  flex-direction: column; */
 }
 
 img {
@@ -419,7 +416,7 @@ h6 {
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 60px 0 0 105px;
   white-space: nowrap;
   opacity: 0.5;
   /* backdrop-filter: sepia(90%); */
@@ -430,7 +427,6 @@ h6 {
 }
 .logos-slide {
   display: inline-block;
-
   animation: 30s slide infinite linear;
 }
 .logos-slide img {
@@ -457,10 +453,14 @@ h6 {
 
 #description {
   outline-color: none;
+  margin-bottom: 2rem;
 }
 .red-tooltip + .tooltip > .tooltip-inner {
   background-color: #f00;
 }
 .tooltip.inner {
   background-color: green !important;
+}
+.badge {
+  font-size: 1.25rem;
 }
