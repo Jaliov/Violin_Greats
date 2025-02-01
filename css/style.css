@@ -166,45 +166,6 @@ li {
   margin-right: 3%;
   /* background-color: rgb(39, 22, 22); */
 }
-/* h2 {
-  font-size: 2.5em;
- 
-} */
-
-/* .cardSpacing {
-  box-shadow: 0px 0px;
-  padding-bottom: 1rem;
-  width: auto;
-  height: auto;
-  margin-bottom: -50px;
-} */
-
-/* .card-item {
-  user-select: none;
-  /* width: 75%; */
-/* display: block; */
-/* background-image: url("violin_subtract.png"); */
-/* padding: 18px;
-  margin-top: 10px; */
-/* border-radius: 12px;
-  text-decoration: none; */
-/* border: 2px solid transparent; */
-/* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); */
-/* transition: 0.2s ease; */
-/* overflow: hidden; */
-
-/* .btn-danger {
-  margin-top: -0.5rem;
-  margin-bottom: 0.5rem;
-} */
-
-/* .btn {
-  margin-top: -10px;
-} */
-
-/* #player {
-  border: 5px dotted white;
-} */
 
 .form-control {
   margin-bottom: 2em;
@@ -454,13 +415,4 @@ h6 {
 #description {
   outline-color: none;
   margin-bottom: 2rem;
-}
-.red-tooltip + .tooltip > .tooltip-inner {
-  background-color: #f00;
-}
-.tooltip.inner {
-  background-color: green !important;
-}
-.badge {
-  font-size: 1.25rem;
 }
