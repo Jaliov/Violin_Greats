@@ -63,7 +63,6 @@ span {
   border-color: #dddd;
   box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
 }
-
 .card-item,
 .card-image {
   width: 40rem;
@@ -390,6 +389,9 @@ h6 {
   display: inline-block;
   animation: 30s slide infinite linear;
 }
+.logos-slide.title {
+  background-color: red;
+}
 .logos-slide img {
   height: 8rem;
   width: auto;
@@ -415,4 +417,8 @@ h6 {
 #description {
   outline-color: none;
   margin-bottom: 2rem;
+}
+
+.tooltip.title {
+  background-color: red;
 }

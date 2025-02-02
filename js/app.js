@@ -58,3 +58,9 @@ $(function () {
 });
 
 $('[data-toggle="tooltip"]').tooltip({ html: true });
+
+document.getElementById("heifetz").innerHTML = "hello";
+
+$(".tooltip").tooltip({
+  tooltipClass: "imgTooltip",
+});
