@@ -44,7 +44,7 @@ document.getElementById(
             <li class="nav-item">
               <a class="nav-link text-light" href="about">About</a>
             <li class="nav-item">
-              <a class="nav-link text-light" href="contact">Contact</a>
+              <a class="nav-link text-light" href="form.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled text-light" href="links">Info/Links</a>
