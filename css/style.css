@@ -10,7 +10,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../violin_subtract.png");
+  background-image: url("violin_subtract.png");
   animation: mymove 180s infinite;
   padding-bottom: 25vh;
 }
