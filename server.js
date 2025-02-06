@@ -3,7 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const port = 3000;
+var port = process.env.PORT || 3000;
+var bodyParser = require("body-parser");
 // const bodyParser = require("body-parser");
 // const bcrypt = require("bcrypt");
 
@@ -36,10 +37,6 @@ const userSchema = new mongoose.Schema({
 });
 
 const Users = mongoose.model("data", userSchema);
-
-app.get("/", (req, res) => {
-  res.send("<h1>Server is working boss</h1>");
-});
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../form.html"));
