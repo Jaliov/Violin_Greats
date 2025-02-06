@@ -52,7 +52,9 @@ app.post("/post", async (req, res) => {
   await user.save();
 
   console.log(user);
-  res.send("Form Submission Sucessful! Oh wow!");
+  res.send(
+    "<h1>Form Submitted!</h1><a href ='https://violin-greats-566d1255af97.herokuapp.com/' class = 'button' style = 'background-color: #5fa7e1; border: none;border-radius: 0.55rem;margin-top: 0.75rem;color: #fff;font-size: 1.5rem;text-decoration: overline;'>Back</a>"
+  );
 });
 
 app.listen(port, () => {

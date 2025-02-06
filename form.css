@@ -64,3 +64,6 @@ input#comments {
   text-align: top;
   padding-block-start: 0px;
 }
+#text {
+  color: red;
+}
