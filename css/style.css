@@ -44,10 +44,9 @@ span {
 }
 
 #navbarNav {
-  position: relative;
-  height: auto;
   padding-bottom: 0;
   background: transparent;
+  margin-bottom: 0;
 }
 
 /*  */
@@ -125,7 +124,6 @@ iframe {
 
 .navbar {
   background-color: rgb(217, 83, 79, 0.2);
-  width: 100%;
 }
 @media only screen and (max-width: 400px) {
   nav {
@@ -141,11 +139,9 @@ iframe {
 
 .navbar-brand {
   font-family: "Marko One", serif;
-  padding-bottom: -0.1rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
-/* .alert,.form-control, .card  {
-   box-shadow: 10px 5px rgb(217, 83, 79, 0.3)
- }    */
 
 @media only screen and (max-width: 600px) {
   #header {
@@ -154,8 +150,11 @@ iframe {
   }
 }
 
-.nav-item {
+.nav-item:hover {
   padding-right: 0.2rem;
+}
+nav.nav-link:hover {
+  color: red;
 }
 
 li {
