@@ -64,7 +64,8 @@ img {
   object-fit: fill;
 }
 .card-item,
-.card-image {
+.card-image,
+#alertFormat {
   width: 40rem;
   height: 30rem;
   border-radius: 20px;
