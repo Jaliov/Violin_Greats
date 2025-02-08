@@ -14,6 +14,11 @@ body {
   box-shadow: 0 0 5px #fff;
   max-height: auto;
 }
+@media screen and (max-width: 600px) {
+  .formcontainer {
+    width: 90vw;
+  }
+}
 
 .formcontainer:hover {
   box-shadow: 0 0 5px rgb(255, 0, 0, 0.5);
@@ -50,13 +55,26 @@ form button {
   height: 3rem;
   margin-bottom: 1rem;
 }
-form button:hover {
+
+.nav-link {
+  margin-top: 1rem;
+}
+form button:hover,
+.nav-link:hover {
   color: #ff0000;
   background: hsl(0, 100%, 50%, 25%);
   /* border: 1px solid #ff0000; */
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
   box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px #ff0000, 0 0 50px #ff0000,
     0 0 100px #008cff;
+}
+
+nav {
+  background-color: rgb(217, 83, 79, 0.2);
+  height: 8vh;
+}
+a.active {
+  margin-left: 3rem;
 }
 
 form button:hover {
