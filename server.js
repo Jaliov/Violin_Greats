@@ -26,6 +26,9 @@ app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(process.env.MONGO_URI);
 const db = mongoose.connection;
+db.on("error", (error) => {
+  console.error("MongoDB connection error:", error);
+});
 db.once("open", () => {
   console.log("Mongodb connection is a go!");
 });
@@ -39,7 +42,7 @@ const userSchema = new mongoose.Schema({
 const Users = mongoose.model("data", userSchema);
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../form.html"));
+  res.sendFile(path.join(__dirname, " ../index.html"));
 });
 
 app.post("/post", async (req, res) => {
