@@ -443,3 +443,7 @@ h6 {
 .tooltip.title {
   background-color: red;
 }
+
+.tltptext {
+  font-size: 1.15rem;
+}

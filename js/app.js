@@ -1,9 +1,5 @@
 window.onload = enableTooltip();
 
-function enableTooltip() {
-  let element = document.getElementById("tt");
-  new bootstrap.Tooltip(element);
-}
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
