@@ -14,6 +14,20 @@ body {
   }
 }
 
+/*.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  /* transform: translateY(-100%); */
+/* transition: all 3s; */
+/* background-image: url("../violin_subtract.png"); */
+/* transform: scale(0.75); */
+/* }
+.hidden:hover img {
+  transform: scale(1.2);
+
+  overflow: hidden;
+}*/
+
 .formcontainer {
   padding: 10px;
   max-width: 500px;
@@ -21,13 +35,39 @@ body {
   /* background-color: #333; */
   color: #fff;
   border-radius: 0.75rem;
-  box-shadow: 0 0 5px #fff;
+
   max-height: auto;
   /* list-style-type: none; */
+  overflow: hidden;
+  transition: transform 800ms;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-color: #dddd;
+  border-width: 0.5px;
 }
+
 #about {
   max-width: 800px;
   padding: 2rem;
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 @media screen and (max-width: 600px) {
   .formcontainer {
