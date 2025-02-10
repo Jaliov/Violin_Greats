@@ -20,15 +20,3 @@ hiddenElements.forEach((el) => observer.observe(el));
 function off() {
   document.querySelector(".intro").style.display = "none";
 }
-
-$(function () {
-  $(".html-tooltip").tooltip();
-});
-
-$('[data-toggle="tooltip"]').tooltip({ html: true });
-
-document.getElementById("heifetz").innerHTML = "hello";
-
-$(".tooltip").tooltip({
-  tooltipClass: "imgTooltip",
-});
