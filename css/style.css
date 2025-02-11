@@ -122,6 +122,9 @@ iframe {
   border: 0;
   overflow: hidden;
 }
+iframe:hover {
+  transform: scale(1.2em);
+}
 
 nav {
   background-color: rgb(217, 83, 79, 0.2);
@@ -337,9 +340,9 @@ h3 {
   height: 100%;
   /* margin-left: 25%; */
   /* aspect-ratio: 16 / 9; */
-  object-fit: cover;
+  /* object-fit: cover; */
   /* border-radius: 10px; */
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,6 +355,12 @@ h3 {
   cursor: pointer;
   opacity: 1;
   overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  h3,
+  h2 {
+    font-size: 1rem;
+  }
 }
 
 a:link {
