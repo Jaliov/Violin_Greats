@@ -255,7 +255,6 @@ iframe {
   background-origin: transparent;
 }
 .card {
-  background-color: transparent;
   overflow: hidden;
 }
 
@@ -348,6 +347,12 @@ h3 {
   h3,
   h2 {
     font-size: 1rem;
+  }
+  .intro:hover {
+    cursor: pointer;
+    opacity: 1;
+    overflow: hidden;
+    scale: 1.05;
   }
 }
 
@@ -448,4 +453,7 @@ h6 {
 
 .tltptext {
   font-size: 1.15rem;
+}
+p {
+  font-size: 1.1rem;
 }
