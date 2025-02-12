@@ -26,3 +26,4 @@ function onBtnClickHandle(youtubeaddr) {
     window.location = youtubeaddr;
   }, 3000);
 }
+document.querySelector(".intro").textContent = "Hey buddy";

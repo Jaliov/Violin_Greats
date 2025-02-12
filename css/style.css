@@ -70,9 +70,7 @@ img {
   height: 30rem;
   border-radius: 20px;
   aspect-ratio: 3/ 2;
-  /* aspect-ratio: 16 / 9; */
-
-  /* position: relative; */
+  position: relative;
   overflow: hidden;
   transition: transform 800ms;
   /* border-style: solid;
@@ -86,7 +84,6 @@ img {
 @media screen and (max-width: 976px) {
   .card-item,
   .card-image {
-    width: max(100%, 100px);
     height: auto;
     flex-direction: column;
     display: flex;
@@ -101,29 +98,22 @@ img {
   }
 }
 
-/* .card-item .card-image {
-  width: 50%;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-} */
-
 .text-center {
   overflow: hidden;
 }
 
-.hidden:hover img {
+/* .hidden:hover {
   transform: scale(1.2);
 
   overflow: hidden;
-}
+} */
 
 iframe {
   border: 0;
   overflow: hidden;
 }
-iframe:hover {
-  transform: scale(1.2em);
+.card-item:hover {
+  border-color: rgb(255, 0, 0, 0.3);
 }
 
 nav {
@@ -141,18 +131,16 @@ nav > a {
 }
 
 .nav-link:hover {
-  color: #ff0000;
+  color: #dc3545;
   background: hsl(0, 100%, 50%, 25%);
   /* border: 1px solid #ff0000; */
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px #ff0000, 0 0 50px #ff0000,
+  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px #dc3545, 0 0 50px #dc3545,
     0 0 100px #008cff;
 }
 #header {
-  padding-top: 2rem;
   font-family: "Marko One", serif;
-
-  margin-top: -20px;
+  margin-top: 2rem;
 }
 
 .navbar-brand {
@@ -163,7 +151,6 @@ nav > a {
 
 @media only screen and (max-width: 600px) {
   #header {
-    font-size: 0;
     margin-bottom: 0;
   }
 }
@@ -331,7 +318,7 @@ h3 {
 .intro {
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 0.5;
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -448,6 +435,11 @@ h6 {
   outline-color: none;
   margin-bottom: 2rem;
 }
+/* @media screen and (max-width: 600px) {
+  #description {
+    margin-top: 5rem;
+  }
+} */
 
 .tooltip.title {
   background-color: red;
