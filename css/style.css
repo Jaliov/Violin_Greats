@@ -62,6 +62,11 @@ span {
 }
 img {
   object-fit: fill;
+  .bg-img {
+    background-image: url("https://eampleimageurlheree.com/image");
+    background-color: rgba(0, 0, 0, 0.725);
+    background-blend-mode: "multiply";
+  }
 }
 .card-item,
 .card-image,
@@ -114,7 +119,7 @@ iframe {
   overflow: hidden;
 }
 .card-item:hover {
-  border-color: rgb(255, 0, 0, 0.3);
+  border-color: #dc3545;
 }
 
 nav {
@@ -343,7 +348,7 @@ h3 {
   align-items: center;
   flex-direction: column;
 
-  background: rgb(66, 9, 7, 0.4);
+  background: rgb(0, 0, 0);
   padding-bottom: 0.5rem;
 }
 .intro:hover {
@@ -450,11 +455,6 @@ h6 {
   outline-color: none;
   margin-bottom: 2rem;
 }
-/* @media screen and (max-width: 600px) {
-  #description {
-    margin-top: 5rem;
-  }
-} */
 
 .tooltip.title {
   background-color: red;
