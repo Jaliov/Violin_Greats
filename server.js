@@ -56,7 +56,7 @@ app.post("/post", async (req, res) => {
 
   console.log(user);
   res.send(
-    "<h1>Form Submitted!</h1><a href ='https://violin-greats-566d1255af97.herokuapp.com/form.html' class = 'button' style = 'background-color:rgb(230, 31, 84, .5); border: 1px solid blue;border-radius: 0.55rem;padding:3px;margin-top: 0.75rem;color: #fff;font-size: 1.5rem;text-decoration: none;'>Back</a>"
+    "<h1>Submited, Thank you!!</h1><a href ='https://violin-greats-566d1255af97.herokuapp.com/form.html' class = 'button' style = 'background-color:rgb(230, 31, 84, .5); border: 1px solid blue;border-radius: 0.55rem;padding:3px;margin-top: 0.75rem;color: #fff;font-size: 1.5rem;text-decoration: none;'>Back</a>"
   );
 });
 
