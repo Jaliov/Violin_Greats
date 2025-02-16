@@ -10,29 +10,26 @@ body {
 
 /*background image animation*/
 @keyframes mymove {
-  50% {
+  75% {
     background-position: center;
   }
 }
 
-/*.hidden {
-  opacity: 0;
-  filter: blur(10px);
-  /* transform: translateY(-100%); */
-/* transition: all 3s; */
-/* background-image: url("../violin_subtract.png"); */
-/* transform: scale(0.75); */
-/* }
-.hidden:hover img {
-  transform: scale(1.2);
-
-  overflow: hidden;
-}*/
+@keyframes moveInLeftNormal {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 .formcontainer {
   padding: 10px;
   max-width: 500px;
-  margin: 100px auto;
+  margin: 50px auto;
   /* background-color: #333; */
   color: #fff;
   border-radius: 0.75rem;
@@ -64,11 +61,23 @@ body {
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+    transform: scaleX(-1);
   }
 }
 @media screen and (max-width: 600px) {
@@ -86,6 +95,8 @@ form {
   flex-direction: column;
   gap: 10px;
   padding: 15px;
+  animation-name: run;
+  animation-duration: 5s;
 }
 
 form label {
@@ -141,10 +152,12 @@ form input {
   border-radius: 0.55rem;
   border: none;
   outline: none;
+  margin-bottom: 1rem;
 }
 textarea {
   height: 60px;
   text-align: top;
+  border-radius: 0.55rem;
 }
 
 input#comments {
