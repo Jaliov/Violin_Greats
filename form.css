@@ -151,6 +151,7 @@ input#comments {
   min-height: 200px;
   text-align: top;
   padding-block-start: 0px;
+  border-radius: 0.55rem;
 }
 #text {
   color: red;
@@ -158,4 +159,8 @@ input#comments {
 li,
 .tltptext {
   font-size: 1.2rem;
+}
+#header {
+  font-family: "Marko One", serif;
+  margin-top: 2rem;
 }
