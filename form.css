@@ -26,10 +26,21 @@ body {
   }
 }
 
+#formImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 150px;
+  margin: auto;
+  opacity: 50%;
+  border-radius: 5.5rem;
+}
+
 .formcontainer {
   padding: 10px;
   max-width: 500px;
-  margin: 50px auto;
+  margin: 25px auto;
   /* background-color: #333; */
   color: #fff;
   border-radius: 0.75rem;
@@ -84,6 +95,10 @@ body {
   .formcontainer {
     width: 90vw;
   }
+  #formImage {
+    height: 100px;
+    width: auto;
+  }
 }
 
 .formcontainer:hover {
@@ -95,8 +110,6 @@ form {
   flex-direction: column;
   gap: 10px;
   padding: 15px;
-  animation-name: run;
-  animation-duration: 5s;
 }
 
 form label {
@@ -176,4 +189,12 @@ li,
 #header {
   font-family: "Marko One", serif;
   margin-top: 2rem;
+  animation-name: run;
+  animation-duration: 3s;
+}
+p {
+  font-size: 1.1rem;
+}
+small {
+  font-family: sans-serif;
 }

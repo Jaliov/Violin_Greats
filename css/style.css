@@ -139,6 +139,21 @@ nav > a {
 #header {
   font-family: "Marko One", serif;
   margin-top: 2rem;
+  animation-name: run;
+  animation-duration: 5s;
+}
+
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+    transform: scaleX(-1);
+  }
 }
 
 .navbar-brand {
@@ -224,7 +239,7 @@ LABEL {
   }
 
   80% {
-    transform: translateX(40px);
+    transform: translateX(60px);
   }
 
   100% {
@@ -262,7 +277,7 @@ small:hover,
 
 .collapseBtnsStyling.show {
   animation-name: moveInLeft;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 .col-9 {
   align-content: center;
@@ -466,6 +481,8 @@ h6 {
 .tltptext {
   font-size: 1.15rem;
 }
-p {
+p,
+small {
   font-size: 1.1rem;
+  font-family: sans-serif;
 }
