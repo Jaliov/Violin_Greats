@@ -17,13 +17,14 @@
         background-image: url("musicianImages/Portrait_du_Violoniste_Paganini_(1819)_-_Jean_A.D._Ingres.png");
         height: 25rem;
         width: auto;
-
-
+        opacity: 0.8
     }
 
-    .container {
+    .container,
+    .card {
         margin-top: 2rem;
         background-color: transparent;
+        border: 0px;
     }
 
     button {
@@ -40,11 +41,12 @@
 <body>
     <div class="container container-fluid">
 
-
-        <h1 class="text-danger" id="header">Form Submitted!</h1>
-        <a href='https://violin-greats-566d1255af97.herokuapp.com/form.html'><button class="btnStyle">Back</button>
-        </a>
-
+        <div class="card col-md-3">
+            <h1 class="text-danger" id="header">Form Submitted!</h1>
+            <p><a href='https://violin-greats-566d1255af97.herokuapp.com/form.html'><button
+                        class="btnStyle">Back</button>
+                </a></p>
+        </div>
 
     </div>
 </body>
