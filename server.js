@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema({
 const Users = mongoose.model("data", userSchema);
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public_html/index.html"));
+  res.sendFile(path.join(__dirname, " ../index.html"));
 });
 
 app.post("/post", async (req, res) => {
@@ -55,7 +55,7 @@ app.post("/post", async (req, res) => {
   await user.save();
 
   console.log(user);
-  res.redirect("public_html/signup_success.html");
+  res.redirect("signup_success.html");
 });
 
 app.listen(port, () => {
