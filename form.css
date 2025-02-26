@@ -211,3 +211,7 @@ small {
     opacity: 0.5;
   }
 }
+.tt1 ~ [class^="tt"] {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
