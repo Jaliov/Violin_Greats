@@ -102,11 +102,27 @@ body {
     height: 100px;
     width: auto;
   }
+  .nav {
+    height: 9vh;
+  }
 }
 
 @media screen and (max-width: 986px) {
   #about {
     margin-top: 3rem;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: 0.3rem;
+  }
+  .navbar-nav:hover {
+    width: 6rem;
+  }
+  .nav {
+    height: 9vh;
   }
 }
 
