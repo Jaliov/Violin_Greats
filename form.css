@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+
 html,
 body {
   margin: 0;
@@ -103,6 +104,12 @@ body {
   }
 }
 
+@media screen and (max-width: 986px) {
+  #about {
+    margin-top: 3rem;
+  }
+}
+
 .formcontainer:hover {
   box-shadow: 0 0 5px rgb(255, 0, 0, 0.5);
 }
@@ -140,8 +147,9 @@ form button {
 }
 
 .nav-link {
-  margin-top: 1rem;
+  margin-right: 2rem;
 }
+
 form button:hover,
 .nav-link:hover {
   color: #ff0000;
@@ -161,7 +169,8 @@ a.active {
 }
 
 form button:hover {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  background-color: red;
 }
 form input {
   border-radius: 0.55rem;
@@ -211,7 +220,24 @@ small {
     opacity: 0.5;
   }
 }
-.tt1 ~ [class^="tt"] {
+.tt1 ~ [class^="tt"],
+.tt6 {
   text-decoration: underline;
   text-decoration-color: red;
 }
+
+#favicon {
+  height: 75%;
+  width: 75%;
+  opacity: 0.3;
+  border-radius: 20px;
+}
+
+#favicon:hover {
+  opacity: 1;
+}
+
+/* .navbar-toggler,
+.navbar-toggler-icon {
+  background-color: red;
+} */
