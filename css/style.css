@@ -156,6 +156,7 @@ nav {
   margin-right: 1rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* .navbar-brand {
@@ -163,12 +164,6 @@ nav {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 } */
-
-@media only screen and (max-width: 600px) {
-  #header {
-    margin-bottom: 0;
-  }
-}
 
 li {
   font-size: 1.2em;
@@ -234,6 +229,9 @@ LABEL {
     background-color: hsl(0, 100%, 50%, 25%);
 
     width: 5rem;
+  }
+  nav {
+    height: 5%;
   }
 }
 
@@ -391,6 +389,17 @@ h3 {
     overflow: hidden;
     scale: 1.05;
   }
+  .logos-slide img {
+    height: 2rem;
+    width: auto;
+    margin: 0 20px;
+  }
+  #header {
+    margin-bottom: 0;
+  }
+  nav {
+    height: 4%;
+  }
 }
 
 a:link {
@@ -450,13 +459,6 @@ h6 {
   width: auto;
   margin: 0 30px; /*40px on left and right of each image tag*/
 }
-@media screen and (max-width: 600px) {
-  .logos-slide img {
-    height: 6rem;
-    width: auto;
-    margin: 0 20px;
-  }
-}
 
 #heifetz {
   height: 9rem;
@@ -497,6 +499,7 @@ small {
   width: 75%;
   opacity: 0.3;
   display: inline-block;
+  margin-bottom: 2px;
 }
 
 #favicon:hover {
