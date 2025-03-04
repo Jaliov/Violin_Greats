@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const { body, validationResult } = require("express-validator");
 var port = process.env.PORT || 3000;
 var bodyParser = require("body-parser");
 // const bodyParser = require("body-parser");
@@ -47,27 +46,13 @@ app.get("/", (req, res) => {
 });
 
 app.post("/post", async (req, res) => {
-  body("name").isAlphanumeric().trim().escape();
   const { name, email, comments } = req.body;
   const user = new Users({
     name,
     email,
     comments,
   });
-
-  router.post("/post", loginValidator, (req, res, next) => {
-    const errors = validationResult(req);
-    if (errors.isEmpty()) {
-      // in case request params meet the validation criteria
-      return res.status(200).json();
-    }
-    res.status(422).json({ errors: errors.array() });
-  });
-
-  app.use((err, res) => {
-    console.error(err.stack);
-    res.status(500).send("Something went wrong!");
-  });
+  await user.save();
 
   console.log(user);
   res.redirect("signup_success.html");
