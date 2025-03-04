@@ -55,18 +55,18 @@ span {
   margin-bottom: 2rem;
 }
 
-.card-item {
+/* .card-item {
   border-style: solid;
   border-color: #dddd;
   box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .card-item,
 .card-image {
   width: 40rem;
   height: 30rem;
   border-radius: 20px;
-  aspect-ratio: 3/ 2;
+  aspect-ratio: 3/2;
   position: relative;
   overflow: hidden;
   transition: transform 800ms;
@@ -77,6 +77,9 @@ span {
   object-fit: cover;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  border-style: solid;
+  border-color: #dddd;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 976px) {
@@ -106,10 +109,6 @@ span {
   overflow: hidden;
 } */
 
-iframe {
-  border: 0;
-  overflow: hidden;
-}
 .card-item:hover {
   border-color: #dc3545;
 }
