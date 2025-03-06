@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 var port = process.env.PORT || 3000;
 var bodyParser = require("body-parser");
+const { body, validationResult } = require("express-validator");
 // const bodyParser = require("body-parser");
 // const bcrypt = require("bcrypt");
 
@@ -45,18 +46,36 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, " ../index.html"));
 });
 
-app.post("/post", async (req, res) => {
-  const { name, email, comments } = req.body;
-  const user = new Users({
-    name,
-    email,
-    comments,
-  });
-  await user.save();
+app.post(
+  "/post",
+  body("name").trim().notEmpty().isLength({ min: 3, max: 30 }),
 
-  console.log(user);
-  res.redirect("signup_success.html");
-});
+  body("email").isEmail(),
+  async (req, res) => {
+    const { name, email, comments } = req.body;
+    const user = new Users({
+      name,
+      email,
+      comments,
+    });
+    const errors = validationResult(req);
+    const message =
+      "No empty fields. Name should be more than 2 characters long";
+    if (!errors.isEmpty()) {
+      return res
+        .status(400)
+        .send(
+          "<h4 style = 'font-family: Arial, Helvetica, sans-serif;'>" +
+            message +
+            "<a href = 'form.html' class = 'button'><br>Back</a></h4>"
+        );
+    }
+    await user.save();
+
+    console.log(user);
+    res.redirect("signup_success.html");
+  }
+);
 
 app.listen(port, () => {
   console.log("Server started port : " + port);
