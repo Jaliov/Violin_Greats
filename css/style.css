@@ -389,15 +389,18 @@ h3 {
     scale: 1.05;
   }
   .logos-slide img {
-    height: 2rem;
+    height: 1rem;
     width: auto;
     margin: 0 20px;
+  }
+  .logos:hover .logos-slide {
+    animation-play-state: running;
   }
   #header {
     margin-bottom: 0;
   }
   nav {
-    height: 8vh;
+    height: 10vh;
   }
 }
 
