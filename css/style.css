@@ -150,12 +150,16 @@ nav {
   }
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   margin-top: 3rem;
   margin-right: 1rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.navbarNavAltMarkup {
+  background-color: black;
 }
 
 /* .navbar-brand {
