@@ -38,6 +38,9 @@ document.getElementById(
             </div>
         </nav>`;
 
+document.querySelector(".navbar-nav").style =
+  "background-color: rgba(255, 0, 0, 0.05)";
+
 let block1 = `  <img src="musicianImages/Portrait_du_Violoniste_Paganini_(1819)_-_Jean_A.D._Ingres.png" title="Paganini" />
             <img src="musicianImages/Bach.jpg" title="Bach" />
             <img src="musicianImages/itzhak-perlman.jpg">

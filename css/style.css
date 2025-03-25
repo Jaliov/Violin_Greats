@@ -15,6 +15,10 @@ body {
   padding-bottom: 25vh;
 }
 
+:root {
+  --red: #dc3545;
+}
+
 span {
   white-space: nowrap;
 }
@@ -109,8 +113,12 @@ span {
   overflow: hidden;
 } */
 
+#navload {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
 .card-item:hover {
-  border-color: #dc3545;
+  border-color: var(--red);
 }
 
 nav {
@@ -123,12 +131,12 @@ nav {
 }
 
 .nav-link:hover {
-  color: #dc3545;
+  color: var(--red);
   background: hsl(0, 100%, 50%, 25%);
   /* border: 1px solid #ff0000; */
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px #dc3545, 0 0 50px #dc3545,
-    0 0 100px #008cff;
+  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px var(--red),
+    0 0 50px var(--red), 0 0 100px #008cff;
 }
 #header {
   font-family: "Marko One", serif;
@@ -158,10 +166,6 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-.navbarNavAltMarkup {
-  background-color: black;
-}
-
 /* .navbar-brand {
   font-family: "Marko One", serif;
   margin-left: 1rem;
@@ -170,7 +174,7 @@ nav {
 
 li {
   font-size: 1.2em;
-  color: red;
+  color: var(--red);
   margin-left: 3%;
   margin-right: 3%;
   /* background-color: rgb(39, 22, 22); */
@@ -196,7 +200,7 @@ LABEL {
 }
 
 .btnStyle {
-  color: #ff0000;
+  color: var(--red);
   /* background: transparent; */
   text-shadow: none;
   background: transparent;
@@ -272,8 +276,8 @@ small:hover,
   background: hsl(0, 100%, 50%, 25%);
   /* border: 1px solid #ff0000; */
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px #ff0000, 0 0 50px #ff0000,
-    0 0 100px #008cff;
+  box-shadow: 0 0 5px (0, 100%, 50%, 25%), 0 0 20px var(--red),
+    0 0 50px var(--red), 0 0 100px #008cff;
 }
 .collapseBtnsStyling {
   margin-bottom: 2rem;
@@ -410,9 +414,8 @@ h3 {
 
 a:link {
   text-decoration: none;
-  color: rgb(206, 23, 23);
+  color: var(--red);
 }
-
 h6 {
   font-size: 1rem;
   width: 25%;
@@ -458,7 +461,7 @@ h6 {
   animation: 30s slide infinite linear;
 }
 .logos-slide.title {
-  background-color: red;
+  background-color: var(--red);
 }
 .logos-slide img {
   height: 8rem;
@@ -484,11 +487,12 @@ h6 {
 
 #description {
   outline-color: none;
-  margin-bottom: 2rem;
+  margin-top: rem;
+  margin-bottom: 3rem;
 }
 
 .tooltip.title {
-  background-color: red;
+  background-color: var(--red);
 }
 
 .tltptext {
