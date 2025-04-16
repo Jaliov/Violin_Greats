@@ -34,6 +34,8 @@ db.once("open", () => {
   console.log("Mongodb connection is a go!");
 });
 
+console.log("this is connection: " + process.env.MONGO_URI);
+
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
