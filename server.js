@@ -1,9 +1,10 @@
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8081;
 var bodyParser = require("body-parser");
 const { body, validationResult } = require("express-validator");
 // const bodyParser = require("body-parser");
